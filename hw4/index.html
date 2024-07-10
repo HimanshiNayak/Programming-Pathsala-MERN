@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="userForm" onsubmit="handleSave(event)">
+        <section class="container">
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="usr" minlength="3" required>
+            </div>
+            <div>
+                <label for="dob">Date of joining </label><br>
+                <input type="date" id="dob" name="date" required>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="mail" required>
+            </div>
+            <div>
+                <label for="age">Age</label><br>
+                <input type="text" id="age" name="age"  onchange="handleAge(event)" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label><br>
+                <input type="text" id="phone" name="phone" onchange="handlePhoneNumber(event)" required>
+            </div>
+            <div>
+                <button type="submit" onclick="hideForm(event)">Submit</button>
+            </div>
+        </section>
+    </form>
+    <section id ="front">
+            <div id= "card1">
+                <div id="cname"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHNrp99nfQa-ifxIxr3_aQKSVTLc_9C4mXg&s"><h1>VacayVentures</h1></div>
+                <div id="img"><img src="human-icon-png-1901-Windows.ico"></div>
+                <div id="info"></div>
+                <div id="line"></div>
+            </div>
+            <button id="flipButton" onclick ="handlecard2(event)">Flip</button>
+    </section>
+    <section id="back">
+            <div id="card2">
+            <div id="cname"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHNrp99nfQa-ifxIxr3_aQKSVTLc_9C4mXg&s"><h1>VacayVentures</h1></div>
+            <div id="info2"></div>
+            <div id="line"></div>
+            </div>
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
