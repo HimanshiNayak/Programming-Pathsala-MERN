@@ -56,32 +56,3 @@ fetch('https://dummyjson.com/recipes')
     
    
     fetchRecipes('');
-    
-// / iteration methods
-// --> foreach, map, filter, find, findIndex
-
-// const arr = ["a", "b", "c", "d", "e"];
-
-// function printData4(fir, sec, th, fr) {
-//     console.log(fir, sec, th, fr);
-// }
-
-// function printData3(fir, sec, th) {
-//     console.log(fir, sec, th);
-// }
-
-// function printData2(fir, sec) {
-//     console.log(fir, sec);
-// }
-
-// // for (let i = 0; i < arr.length; i++) { //prints the ele then index then whole arr
-// //     printData3(arr[i], i, arr);
-// // }
-// console.log("------------------");
-// arr.forEach(printData2); //gives the ele and the indx
-// console.log("------------------");
-// arr.forEach(printData3);  //gives the ele ind and the array
-// console.log("------------------");
-// arr.forEach(printData4); //same as above but fourth para undefined
-// console.log("------------------");
-// //is a format see w3c
